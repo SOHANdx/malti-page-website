@@ -2,4 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration:none;
+  text-transform: capitalize;
+  list-style-type: none;
 }
+/* nav start here */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c2461;
+  color: #b71540;
+  height: 80px;
+  padding: 10px 0px;
+}
+.logo h1{
+  margin-left: 50px;
+  font-size: 30px;
+}
+nav ul{
+  margin-right: 50px;
+}
+nav ul li{
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+}
+nav ul li::after{
+  content: '';
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -1000px;
+  left: 0;
+  transition: .3s;
+}
+nav ul li:hover::after{
+  top: 0;
+}
+nav ul li a{
+  color: inherit;
+  font-size: 20px;
+}
+ul li a:hover{
+  color: #ffffff;
+}
+/* nav end here */
