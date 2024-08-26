@@ -15,6 +15,7 @@ nav{
   color: #b71540;
   height: 80px;
   padding: 10px 0px;
+  border-bottom: 2px solid #eee;
 }
 .logo h1{
   margin-left: 50px;
@@ -52,3 +53,35 @@ ul li a:hover{
   color: #ffffff;
 }
 /* nav end here */
+
+/* hero aera start here */
+header{
+  background-image: url('/images/website banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+  padding: 200px 0;
+}
+.searchbar-icon-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.searchbar-icon-container input{
+  width: 500px;
+  height: 40px;
+  padding: 0px 20px;
+  outline:0 ;
+  border: 0;
+  border-radius: 5px;
+}
+.searchbar-icon-container i{
+  color: #b71540;
+  background: #0c2461;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-left: -52px;
+}
+/* hero aera end here */
